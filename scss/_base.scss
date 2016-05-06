@@ -1,0 +1,37 @@
+html {
+  font-family: Open Sans, Arial, Helvetica, sans-serif;
+  font-size: 100%;
+  color: #333333; 
+}
+body {
+  min-height: 100vh;
+  background-color: #eee;
+}
+form {
+  margin: 0 6%; 
+}
+header, footer, main, section, article {
+  display: block; 
+}
+header, footer, main, section, article, body, ul, ol, li, fieldset {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+*, :after, :before {
+  box-sizing: border-box;
+  background-repeat: no-repeat; 
+}
+:before, :after {
+  display: inline-block; 
+}
+a, summary {
+  color: #0c4da9;
+  text-decoration: none; 
+}
+a:hover,
+a:active,
+summary:hover,
+summary:active {
+  text-decoration: underline; 
+}

@@ -1,0 +1,49 @@
+.mgr-labels li {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  border-radius: $mgrRadius;
+}
+.mgr-labels li p {
+  margin: 0; 
+  text-align: center;
+}
+
+.mgr {
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: $mgrWidth + 5em;
+    box-sizing: border-box;
+    margin: auto; 
+  div {
+    display: flex;
+    align-items: center;
+      ul {
+        display: flex;
+        align-items: stretch; 
+        width: $mgrWidth;
+        overflow: hidden;
+      }
+      li {
+        border: $mgrBorder;
+        justify-content: center;
+        flex: 0 0 $mgrWidth;
+        transition: left 200ms;
+        position: relative;
+        left: 0; 
+      }
+    $count: 0;
+    @while $count < 20 {
+      .left#{$count} li {
+        left: $count * $mgrWidth * -1
+      }
+      $count: $count + 1
+    }
+
+  }
+}

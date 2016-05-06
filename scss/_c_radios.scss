@@ -1,0 +1,40 @@
+/*/ RADIO BUTTONS /*/
+.mgr-radios {
+  display: flex;
+  padding-top: 20px;
+  justify-content: center;
+  list-style-type: none;
+  margin: auto; 
+ li {
+  flex: 0 1 $radioSpacing;
+  text-align: center;
+  position: relative; 
+ input {
+  cursor: pointer;
+  display: block;
+  height: 10px;
+  width: 10px;
+  z-index: 2; 
+  &:focus {
+    background-color: black; 
+  } // end focus
+  } // end input
+  span {
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  display: block;
+  width: 10px;
+  height: 10px;
+  border: 1.5px solid $themeColor;
+  border-radius: 50%;
+  z-index: 1; 
+} // end span
+:checked + span {
+  background-color: darken($themeColor, 20%); 
+}
+ :focus + span {
+   outline: 1px dashed darken($themeColor, 20%);
+}
+} //end li
+} // end class

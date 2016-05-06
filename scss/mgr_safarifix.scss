@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+// Variables
+$themeColor: blue;
+$mgrWidth: 20em;
+$arrowWidth: 1px;
+$arrowSize: 20px;
+$mgrBorder: 1px solid #bbbbbb;
+$radioSpacing: 20px;
+$mgrRadius: 5px;
+
+// General for all mgr mgrs:
+@import "c_fieldset";
+@import "c_labels";
+@import "c_radios";
+@import "c_arrows";
+@import "c_mgr";
+
+
+// Specific to this example
+@import "example";
+@import "ex_safariaddress";

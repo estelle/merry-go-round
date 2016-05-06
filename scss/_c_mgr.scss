@@ -1,0 +1,13 @@
+  // --------------------------------
+  // hide the legend and radio buttons 
+  // from sited users 
+  // without using display; none;
+  // pick your favorite from the combos below
+  // --------------------------------
+  
+  input[type=radio], 
+  legend {
+    position: absolute;
+    opacity: 0.01;
+  }
+

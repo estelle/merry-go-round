@@ -1,0 +1,177 @@
+fieldset.mgr {
+  border: none; }
+  fieldset.mgr::-webkit-scrollbar {
+    width: 8px;
+    height: 8px; }
+  fieldset.mgr::-webkit-scrollbar-button:end:increment, fieldset.mgr::-webkit-scrollbar-button:start:decrement, fieldset.mgr::-webkit-scrollbar-button:vertical:end:decrement, fieldset.mgr::-webkit-scrollbar-button:vertical:start:increment {
+    display: none; }
+  fieldset.mgr::-webkit-scrollbar-track-piece:vertical {
+    background-color: transparent; }
+  fieldset.mgr::-webkit-scrollbar-track-piece:vertical:start {
+    border-radius: 10px 10px 0 0;
+    background-color: transparent; }
+  fieldset.mgr::-webkit-scrollbar-track-piece:vertical:end {
+    border-radius: 0 0 10px 10px;
+    background-color: transparent; }
+  fieldset.mgr::-webkit-scrollbar-thumb:vertical {
+    height: 56px;
+    border-radius: 10px;
+    background-color: #494949; }
+
+.mgr-labels li {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px; }
+
+.mgr-labels li p {
+  margin: 0;
+  text-align: center; }
+
+.mgr {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25em;
+  box-sizing: border-box;
+  margin: auto; }
+  .mgr ul {
+    margin: 0;
+    padding: 0; }
+  .mgr div {
+    display: flex;
+    align-items: center; }
+    .mgr div ul {
+      display: flex;
+      align-items: stretch;
+      width: 20em;
+      overflow: hidden; }
+    .mgr div li {
+      border: 1px solid #bbbbbb;
+      justify-content: center;
+      flex: 0 0 20em;
+      transition: left 200ms;
+      position: relative;
+      left: 0; }
+    .mgr div .left0 li {
+      left: 0em; }
+    .mgr div .left1 li {
+      left: -20em; }
+    .mgr div .left2 li {
+      left: -40em; }
+    .mgr div .left3 li {
+      left: -60em; }
+    .mgr div .left4 li {
+      left: -80em; }
+    .mgr div .left5 li {
+      left: -100em; }
+    .mgr div .left6 li {
+      left: -120em; }
+    .mgr div .left7 li {
+      left: -140em; }
+    .mgr div .left8 li {
+      left: -160em; }
+    .mgr div .left9 li {
+      left: -180em; }
+    .mgr div .left10 li {
+      left: -200em; }
+    .mgr div .left11 li {
+      left: -220em; }
+    .mgr div .left12 li {
+      left: -240em; }
+    .mgr div .left13 li {
+      left: -260em; }
+    .mgr div .left14 li {
+      left: -280em; }
+    .mgr div .left15 li {
+      left: -300em; }
+    .mgr div .left16 li {
+      left: -320em; }
+    .mgr div .left17 li {
+      left: -340em; }
+    .mgr div .left18 li {
+      left: -360em; }
+    .mgr div .left19 li {
+      left: -380em; }
+
+/*/ RADIO BUTTONS /*/
+.mgr-radios {
+  display: flex;
+  padding-top: 20px;
+  justify-content: center;
+  list-style-type: none;
+  margin: auto; }
+  .mgr-radios li {
+    flex: 0 1 20px;
+    text-align: center;
+    position: relative; }
+    .mgr-radios li input {
+      cursor: pointer;
+      display: block;
+      height: 10px;
+      width: 10px;
+      z-index: 2; }
+      .mgr-radios li input:focus {
+        background-color: black; }
+    .mgr-radios li span {
+      position: absolute;
+      left: 3px;
+      top: 3px;
+      display: block;
+      width: 10px;
+      height: 10px;
+      border: 1.5px solid blue;
+      border-radius: 50%;
+      z-index: 1; }
+    .mgr-radios li :checked + span {
+      background-color: #000099; }
+    .mgr-radios li :focus + span {
+      outline: 1px dashed #000099; }
+
+.forward,
+.backward {
+  background: none;
+  border: none;
+  color: blue;
+  width: 20px;
+  height: 20px;
+  border: 1px solid;
+  border-style: none none solid solid;
+  transform: rotate(45deg);
+  cursor: pointer;
+  box-sizing: border-box; }
+
+.forward:hover,
+.backward:hover,
+.forward:focus,
+.backward:focus {
+  color: #000099;
+  outline: none;
+  box-shadow: none;
+  border-width: 3px; }
+
+.forward {
+  border-style: solid solid none none; }
+
+input[type=radio],
+legend {
+  position: absolute;
+  opacity: 0.01; }
+
+body {
+  font-family: verdana; }
+
+label {
+  display: flex;
+  flex-direction: column;
+  align-content: center; }
+
+.mgr-labels li {
+  font-size: 1rem;
+  line-height: 1.6; }
+
+.mgr-labels li p {
+  margin: 0;
+  text-align: center; }
+
+/*# sourceMappingURL=mgr.css.map */

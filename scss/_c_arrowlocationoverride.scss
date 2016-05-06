@@ -1,0 +1,33 @@
+//*/ -------------------------------------------------/*/
+//*/ ARROWS: in the mgrd instead of outside      /*/
+//*/ -------------------------------------------------/*/
+.forward, 
+.backward {
+  transform: translatex(3em) rotate(45deg) ;
+  z-index: 100;
+  position: relative;
+  &:before {
+    content: "";
+    position: absolute;
+    top: -0.5em; bottom: -0.5em; left: -1em; right: -1em;
+    background: rgba(255,255,255,0.3);
+    transform: rotate(-45deg);
+  }
+  &:focus:before {
+    outline: 3px solid black;
+  }
+}
+
+.forward {
+  transform: translatex(-3em) rotate(45deg);
+}
+
+.forward:after {
+  border-style:  none solid solid none;
+  
+}
+.mgr-labels label {
+  display: block;
+  height: 100%;
+  width: 100%;
+}

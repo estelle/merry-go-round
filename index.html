@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<head>
+  <title>Account</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/mgr.css">
+</head>
+
+<body>
+<p>Note: This is a fake form. Submitting on the edit button will submit to itself</p>
+          <form action="index.html">
+          <fieldset class="mgr" id="address">
+          <legend>Select an address to edit:</legend>
+          <div>
+            <a class="backward" data-move="backward" data-mgr="shipping-addresses" hidden></a>
+            <ul class="mgr-labels left0">
+              <li>
+                <label for="address1">
+                <p>Instart Logic</p>
+                <p>US Headquarters</p>
+                <p>450 Lambert Avenue</p>
+                <p>Palo Alto, CA 94306</p>
+                </label>
+              </li>
+              <li>
+                <label for="address2">
+                <p>Instart Logic</p>
+                <p>India Office</p>
+                <p>6th Floor , HM Vibha Towers</p>
+                <p>Hosur Rd, Adugodi</p>
+                <p>Bengaluru — 560029</p>
+                </label>
+              </li>
+              <li>
+                <label for="address3">
+                  <p>Instart Logic</p>
+                  <p>New York Office</p>
+                  <p>499 Seventh Ave, 7th Floor North</p>
+                  <p>New York, NY 10018</p>
+                </label>
+              </li>
+              <li>
+                <label for="address4">
+                  <p>Instart Logic</p>
+                  <p>Boston Office</p>
+                  <p>400 West Cummings Park, Suite 3650</p>
+                  <p>Woburn, MA 01801</p>
+                </label>
+              </li>
+              <li>
+                <label for="address5">
+                  <p>Instart Logic</p>
+                  <p>London Office</p>
+                  <p>Knyvett House</p>
+                  <p>Watermans Business Park</p>
+                  <p>The Causeway</p>
+                  <p>Staines-Upon-Thames, TW18 3BA, UK</p>
+                </label>
+              </li>
+            </ul>
+            <a class="forward" data-move="forward" data-mgr="shipping-addresses" hidden></a>
+            </div>
+            <ul id="addressradios" class="mgr-radios">
+              <li>
+                <input type="radio" name="shipping-addresses" data-value="0" id="address1" checked><span></span>
+              </li>
+              <li>
+                <input type="radio" name="shipping-addresses" data-value="1" id="address2"><span></span>
+              </li>
+              <li>
+                <input type="radio" name="shipping-addresses" data-value="2" id="address3"><span></span>
+              </li>
+              <li>
+                <input type="radio" name="shipping-addresses" data-value="3" id="address4"><span></span>
+              </li>
+              <li>
+                <input type="radio" name="shipping-addresses" data-value="4" id="address5"><span></span>
+              </li>
+          
+            </ul>
+            </fieldset>
+           <input type="submit" value="Edit">
+            </form>
+<script src="js/merry-go-round.js"></script>
+<script>
+window.onload = function () {
+  mgr.init('address');
+};
+</script>
+</body>
+</html>

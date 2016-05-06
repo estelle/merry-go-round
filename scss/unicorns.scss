@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+$themeColor: red;
+$mgrWidth: 40em;
+$arrowWidth: 5px;
+$arrowSize: 20px;
+$mgrBorder: 1px solid #bbbbbb;
+$radioSpacing: 20px;
+$mgrRadius: 5px;
+
+@import "c_fieldset";
+@import "c_labels";
+@import "c_radios";
+@import "c_arrows";
+@import "c_arrowlocationoverride";
+@import "c_mgr";
+
+@import "example";
+@import "ex_horses";
