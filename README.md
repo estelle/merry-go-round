@@ -1,6 +1,8 @@
-# NonCarousel-NonCarousel
+# Merry-Go-Round
 
-Script for creating simple, accessible mgrs
+Script for creating simple, accessible carousel-like merry-go-rounds.
+
+"Ceci n'est pas un carrousel"
 
 
 ## Features
