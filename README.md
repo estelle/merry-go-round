@@ -65,27 +65,27 @@ $radioSpacing: 20px;
 
 ## HTML
 
-The first rule of ARIA is don't use ARIA. The 1st rule of ARIA use is if you can use a native HTML element or attribute with the semantics behavior already built in, do that instead. The point of NonCarousel-NonCarousel is to create accessible content, then turn it into a mgr for sighted users: progressive enhancement. 
+The first rule of ARIA is don't use ARIA. The 1st rule of ARIA use is if you can use a native HTML element or attribute with the semantics behavior already built in, do that instead. The point of Merry-Go-Round is to create accessible content, then turn it into a mgr for sighted users: progressive enhancement. 
 
 Start off with semantic HTML. Here is the outline: 
 
 ```html
 <form action="someAction">
-<fieldset class="mgr" id="idForTheNonCarousel">
+<fieldset class="mgr" id="idForMerryGoRound">
   <legend>Legend is read by screenreader</legend>
   <div>
-    <a class="backward" data-move="backward" data-mgr="nameOfRadioButtons" hidden aria-hidden="true"></a>
+    <a class="backward" data-move="backward" data-mgr="nameOfRadioButtons" hidden></a>
     <ul class="mgr-labels left0">
       <li>
-        <label for="firstRadioID">NonCarousel Slide #1
+        <label for="firstRadioID">Merry Go Round Slide #1
         </label>
       </li>
       <li>
-        <label for="secondRadioID">NonCarousel Slide #2
+        <label for="secondRadioID">Merry Go Round Slide #2
         </label>
       </li>
     </ul>
-    <a class="forward" data-move="forward" data-mgr="nameOfRadioButtons" hidden aria-hidden="true"></a>
+    <a class="forward" data-move="forward" data-mgr="nameOfRadioButtons" hidden></a>
     </div>
     <ul class="mgr-radios">
       <li>
@@ -170,6 +170,7 @@ To do:
 
 ## Exceptions
 
+The forward and back arrows are not keyboard focusable by default. If you want to make them keyboard focusable, uncomment the code to do so in the `merry-go-round.js` script.
 
 ## ReactJS version
 
@@ -185,4 +186,5 @@ This code is available under the [MIT license](LICENSE)
 
 ## Thanks
 
+Jennifer Sutton for help with testing. The team at [Instart Logic](http://instartlogic.com) and Environments for Humans for naming.
 
