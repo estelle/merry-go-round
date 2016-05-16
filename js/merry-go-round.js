@@ -6,17 +6,17 @@ var mgr = {
 
   init: function (id) {
     mgr.mgrID = id;
-    mgr.activateNonCarousels();  
+    mgr.activateMerryGoRound();  
   },
 
-  activateNonCarousels : function () {
+  activateMerryGoRound : function () {
     var radios = document.querySelectorAll('#' + mgr.mgrID +' input[type="radio"]'),
         i = 0,
         l = radios.length;
-    if(l && mgr.arrowButtons) {
-      if(l > 1) { // if you have more than one card, add back and forward buttons for sited users
+    if(l) {
+      if(l > 1  && mgr.arrowButtons) { // if you have more than one card, add back and forward buttons for sited users
         mgr.activateForwardAndBack();
-      }
+      } 
       for(i = 0; i < l; i++) {
         radios[i].addEventListener('change', function (e) {
           mgr.mgrChange(e.target.dataset.value);
