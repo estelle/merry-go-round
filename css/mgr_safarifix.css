@@ -100,7 +100,8 @@ fieldset.mgr {
   padding-top: 20px;
   justify-content: center;
   list-style-type: none;
-  margin: auto; }
+  margin: auto;
+  flex: 100%; }
   .mgr-radios li {
     flex: 0 1 20px;
     text-align: center;
