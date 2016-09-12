@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+  <title>Account</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/mgr_safarifix.css">
+</head>
+
+<body>
+<span>Note: This is a fake form. Submitting on the edit button will submit to itself</span>
+          <form action="index.html">
+           
+          <fieldset class="mgr" id="address" style="display: flex; flex-direction: column-reverse;">
+          <legend>Select an address to edit:</legend>
+            
+<div>
+<ul class="mgr-labels left0">
+  <li>
+    <label for="address1">
+    Instart Logic
+    US Headquarters
+    450 Lambert Avenue
+    Palo Alto, CA 94306
+    </label>
+  </li>
+  <li>
+    <label for="address2">
+    Instart Logic
+    India Office
+    6th Floor , HM Vibha Towers
+    Hosur Rd, Adugodi
+    Bengaluru — 560029
+    </label>
+  </li>
+  <li>
+    <label for="address3">
+      Instart Logic
+      New York Office
+      499 Seventh Ave, 7th Floor North
+      New York, NY 10018
+    </label>
+  </li>
+  <li>
+    <label for="address4">
+      Instart Logic
+      Boston Office
+      400 West Cummings Park, Suite 3650
+      Woburn, MA 01801
+    </label>
+  </li>
+  <li>
+    <label for="address5">
+      Instart Logic
+      London Office
+      Knyvett House
+      Watermans Business Park
+      The Causeway
+      Staines-Upon-Thames, TW18 3BA, UK
+    </label>
+  </li>
+</ul>
+</div>
+<ul id="addressradios" class="mgr-radios" style="height: 40px;">
+  <li>
+    <input type="radio" name="shipping-addresses" data-value="0" id="address1" checked><span></span>
+  </li>
+  <li>
+    <input type="radio" name="shipping-addresses" data-value="1" id="address2"><span></span>
+  </li>
+  <li>
+    <input type="radio" name="shipping-addresses" data-value="2" id="address3"><span></span>
+  </li>
+  <li>
+    <input type="radio" name="shipping-addresses" data-value="3" id="address4"><span></span>
+  </li>
+  <li>
+    <input type="radio" name="shipping-addresses" data-value="4" id="address5"><span></span>
+  </li>
+</ul>
+</fieldset>  
+           <input type="submit" value="Edit">
+            </form>
+<script src="js/merry-go-round.simple.js"></script>
+<script>
+window.onload = function () {
+  mgr.init('address');
+};
+</script>
+</body>
+</html>
